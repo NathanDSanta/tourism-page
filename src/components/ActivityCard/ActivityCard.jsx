@@ -1,11 +1,11 @@
 import React from "react";
 import "./ActivityCard.css";
 
-function ActivityCard() {
+function ActivityCard({ name, link, mapa }) {
   return (
-    <div className="ActivityCard">
-      <h1>ActivityCard</h1>
-    </div>
+    <div className="ActivityCard" style={{ "--link": `url(${link})` }}>
+      <h2><a href={mapa}>{name}</a></h2>
+    </div >
   );
 }
 

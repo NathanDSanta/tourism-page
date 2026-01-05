@@ -1,3 +1,13 @@
 .Activities {
-  /* Styles for Activities */
+  background-color: var(--green);
+  width: 50vw;
+  transform: translateY(-1.3vh) translateX(2vh);
+  height: 22vh;
+  border-radius: 15px;
+  grid-column: 1 / 6;
+  grid-row: 4 / 6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: var(--green) 0 0 5px 1px;
 }

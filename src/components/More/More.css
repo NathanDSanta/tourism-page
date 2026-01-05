@@ -1,0 +1,25 @@
+.More {
+  height: 5vh;
+  width: 13vw;
+  transform: translateY(60%) translateX(-3.5vw);
+  border-radius: 15px;
+  background-color: var(--green);
+  box-shadow: var(--green) 0 0 5px 0.5px;
+  grid-column: 10 / 11;
+  grid-row: 1 / 2;
+  text-align: center;
+  align-content: center;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  z-index: 2;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.More:hover {
+  background-color: var(--lightGreen);
+}
+
+.More a {
+  color: black;
+  background: none;
+}

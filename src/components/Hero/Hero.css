@@ -1,3 +1,18 @@
 .Hero {
-  /* Styles for Hero */
+  height: 90vh;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  mask-image: url('mask.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  background-color: red;
+}
+
+.Hero video {
+  width: inherit;
+  height: inherit;
+  filter: saturate(2);
+  aspect-ratio: 3 / 4;
+  z-index: -1;
+  object-fit: cover;
 }

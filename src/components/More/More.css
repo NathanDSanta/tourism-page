@@ -9,7 +9,6 @@
   grid-row: 1 / 2;
   text-align: center;
   align-content: center;
-  font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   z-index: 2;
   transition: background-color 0.1s ease-in-out;

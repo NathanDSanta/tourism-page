@@ -1,3 +1,29 @@
 .AudioPlayer {
-  /* Styles for AudioPlayer */
+  background-color: red;
+  grid-column: 1 / 5;
+  grid-row: 10 / 10;
+  margin: 2vh 4vh;
+  align-content: center;
+}
+
+.AudioPlayer button {
+  width: 2vw;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--green);
+  box-shadow: 0px 0px 5px 1px var(--green);
+}
+
+.playing img {}
+
+.paused img {
+  transform: translateY(2px) translateX(1px);
+}
+
+.AudioPlayer img {
+  width: 1vw;
+  aspect-ratio: 1 / 1;
+  background: none;
+  transform: translateY(2px);
 }

@@ -1,0 +1,16 @@
+.Title {
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  margin: 4vh;
+}
+
+.Title h1 {
+  font-size: 70px;
+  margin: 15px 0;
+  color: var(--darkGreen);
+}
+
+.Title p {
+  font-size: 16px;
+  color: var(--gray);
+}

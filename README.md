@@ -57,3 +57,11 @@ Then install the modules needed and run the webpage:
 ```
 
 Now a Browser window should open with the webpage
+
+## Access the Webpage
+
+In this repository:
+[Github](https://github.com/NathanDSanta/tourism-page)
+
+Or at the published version on Github Pages:
+[Pages](https://nathandsanta.github.io/tourism-page)

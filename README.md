@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Tourism Promotion Web Page project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## WireFrame 
+My webpage has a very simple design, with only a window and no scrolling content.
+It has images for the activities you can do, some background music that you can pause,
+and a big video "window" with some places in Banyoles, my town.
 
-## Available Scripts
+## Multimedia elements
 
-In the project directory, you can run:
+### Video
+The main attraction of this webpage is the video. It is a 4:3 video with a custom svg mask
+that makes it look slightly more attractive with inverted border radius and notches. It has
+an increased saturation so it doesn't seem so 'dead'.
 
-### `npm start`
+### Photos
+For the attractions in my town, there are 4 photos in a static carrousel (the intention was,
+if the attractions don't fit, make it a carrousel, but there aren't many things to do in 
+Banyoles, so in the end everything fit). Every photo has a link to the location of the place
+on the map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Audio
+There is some background music that you can pause with the button at the bottom left of the page.
+It auto plays on opening the webpage, but that feature might not work depending on the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Development Process
+First, was the design. Which is heavily inspired by someone's own idea on Instagram I saw a couple
+weeks ago. But it is very adapted to my use case, and most items are different because I had different
+information to work with.
 
-### `npm test`
+After the design, I made a basic structure with empty files to organize my future code and to keep it tidy.
+To make easier the importing of css styles, I chose to have them adjacent to the .jsx files. Also, I chose
+to have almost every element on its own file, even if, technically, might not have been a component. This
+choice was also heavily influenced by the fact that I used a grid to place the items on the webpage, so 
+I could have every element in its own div and then place that div wherever on the grid I wanted. This also
+makes it more modular.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When it came to code the webpage, first I added the video with the mask, since it is the biggest element and
+everything else revolves around it. After that, I added the Discover More button on the top left, which link
+to the Banyoles tourism office's webpage. Then, I added the 'carrousel' with the activities you can do. And,
+in the end, I added the text, and the music (with the button).
 
-### `npm run build`
+As for the usage of AI, it has only been used to search through css documentation (mainly sintax) since I often
+forget small things (like `:hover` or `::hover`, the order of parameters for `box-shadow`, etc).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instruction to local run the website
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+First clone the repo and enter:
+```bash
+    git clone https://github.com/NathanDSanta/tourism-page
+    cd tourism-page
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then install the modules needed and run the webpage: 
+```bash
+    npm install
+    npm start
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Now a Browser window should open with the webpage

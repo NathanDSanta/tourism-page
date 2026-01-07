@@ -29,8 +29,7 @@ function AudioPlayer() {
       />
 
       <button onClick={toggleAudio} className={isPlaying ? "playing" : "paused"}>
-        <img src={isPlaying ? "/assets/icons/pause.png" : "/assets/icons/play.png"} />
-        <FontAwesomeIcon icon="fa-solid fa-play" />
+        <img src={isPlaying ? "/assets/icons/pause.svg" : "/assets/icons/play.svg"} />
       </button>
     </div >
   );

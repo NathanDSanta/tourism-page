@@ -1,29 +1,33 @@
 .AudioPlayer {
-  background-color: red;
   grid-column: 1 / 5;
   grid-row: 10 / 10;
-  margin: 2vh 4vh;
+  background: none;
+  margin: 0 4vh;
+  padding-left: 5px;
   align-content: center;
 }
 
 .AudioPlayer button {
   width: 2vw;
+  margin: 2px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: none;
   background-color: var(--green);
   box-shadow: 0px 0px 5px 1px var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease-in-out;
 }
 
-.playing img {}
-
-.paused img {
-  transform: translateY(2px) translateX(1px);
+.AudioPlayer button:hover {
+  background-color: var(--lightGreen);
 }
+
 
 .AudioPlayer img {
   width: 1vw;
   aspect-ratio: 1 / 1;
   background: none;
-  transform: translateY(2px);
 }

@@ -1,7 +1,8 @@
 .Tags {
   grid-row: 8 / 10;
   grid-column: 1 / 5;
-  margin: 5vh 4vh;
+  margin: 5vh 3vh;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -10,9 +11,9 @@
 .Tags li {
   background: linear-gradient(90deg, var(--lightGreen) 60%, var(--darkGreen) 100%);
   background-size: 200%;
-  background-position: right;
+  background-position: 90%;
   font-size: 13px;
-  border: solid 1px var(--gray);
+  border: solid 1px var(--green);
   box-shadow: var(--green) 0 0 5px 0.5px;
   border-radius: 20px;
   width: fit-content;

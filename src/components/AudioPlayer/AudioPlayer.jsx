@@ -24,12 +24,12 @@ function AudioPlayer() {
     <div className="AudioPlayer">
       <audio
         ref={audioRef}
-        src="/assets/audio/banyoles.mp3"
+        src={`${process.env.PUBLIC_URL}/assets/audio/banyoles.mp3`}
         loop
       />
 
       <button onClick={toggleAudio} className={isPlaying ? "playing" : "paused"}>
-        <img src={isPlaying ? "/assets/icons/pause.svg" : "/assets/icons/play.svg"} />
+        <img src={isPlaying ? `${process.env.PUBLIC_URL}/assets/icons/pause.svg` : `${process.env.PUBLIC_URL}/assets/icons/play.svg`} />
       </button>
     </div >
   );

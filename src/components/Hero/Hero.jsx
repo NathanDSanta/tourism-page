@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="Hero">
       <video autoPlay loop muted>
-        <source src="/assets/video/banyoles.mp4" type="video/mp4" />
+        <source src={`${process.env.PUBLIC_URL}/assets/video/banyoles.mp4`} type="video/mp4" />
       </video>
     </div>
   );
